@@ -9,12 +9,15 @@ class Solution:
             n = nums.pop(0)
 
             perms = self.permute(nums)
+            print("perms: ")
+            print(perms)
 
             for perm in perms:
                 perm.append(n)
             result.extend(perms)
             nums.append(n)
         
+        print("result: ")
         print(result)
         return result
 
